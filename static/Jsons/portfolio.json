@@ -1,0 +1,59 @@
+{
+	"About" :
+	{
+		"First" : "Reda",
+		"Last" : "Elmountassir",
+		"Age" : 14
+	},
+
+	"Education" :
+	{
+		"Elementary" : "Mast Community Charter School",
+		"Highschool" : ["Mast Community Charter School", "Community College of Philadelphia"],
+		"College" : null
+	},
+
+	"Projects" :
+	{
+		"ThisWebsite" : "thats it"
+	},
+
+	"Languages" :
+	{
+		"Python" :
+		{
+			"Experience" : "Beginner",
+			"I used in" : ["Calculator", "Apis"]
+		},
+		"C#" :
+		{
+			"Experience" : "Intermediate",
+			"I used in" : ["Video Game"]
+		},
+		"HLSL" :
+		{
+			"Experience" : "Intermediate",
+			"I used in" : ["Shaders"]
+		},
+		"C++" :
+		{
+			"Experience" : "Beginner",
+			"I used in" : []
+		},
+		"HTML" :
+		{
+			"Experience" : "Intermediate",
+			"I used in" : ["Personal Website"]
+		},
+		"CSS" :
+		{
+			"Experience" : "Beginner",
+			"I used in" : ["Personal Website"]
+		},
+		"Javascript" :
+		{
+			"Experience" : "Beginner",
+			"I used in" : ["Personal Website"]
+		}
+	}
+}

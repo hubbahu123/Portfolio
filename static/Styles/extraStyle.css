@@ -1,0 +1,139 @@
+/*Preloader CSS*/
+.cover {
+	position: absolute;
+	z-index: 102;
+	background-color: #001233;
+	transition: opacity 1s ease;
+	left: 0;
+	top: 0;
+	cursor: wait;
+}
+#preloader {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+#preloader #logo {
+	width: 2rem;
+	position: absolute;
+	animation: anim-glow 3s ease-in-out infinite alternate;
+}
+#preloader.hide,
+#preloader.hide * {
+	animation: none !important;
+	display: none !important;
+}
+noscript {
+	z-index: 103;
+	background-position: center;
+	background-image: linear-gradient(to top, #0f131a, transparent 10%),
+		url("https://images.pexels.com/photos/374908/pexels-photo-374908.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940");
+	background-size: cover;
+	display: flex;
+	align-items: flex-end;
+	justify-content: flex-end;
+	padding: 2.5%;
+	text-align: right;
+}
+.fullspace {
+	width: 100%;
+	height: 100%;
+	top: 0;
+	left: 0;
+	position: absolute;
+}
+/*-------------------------------------------------*/
+
+/*Spinner CSS*/
+.spinner {
+	position: absolute;
+	animation: anim-rotate 5s linear infinite;
+}
+.spinner span {
+	position: absolute;
+	background: #7d8597;
+	width: 0.25rem;
+	height: 1.5rem;
+	border-radius: 25%;
+	box-shadow: 0 0 10px #f4f4f6;
+}
+.spinner span:nth-child(1) {
+	transform: translate(-50%, -50%) rotate(22.5deg) translateY(3rem);
+}
+.spinner span:nth-child(2) {
+	transform: translate(-50%, -50%) rotate(45deg) translateY(3rem);
+}
+.spinner span:nth-child(3) {
+	transform: translate(-50%, -50%) rotate(67.5deg) translateY(3rem);
+}
+.spinner span:nth-child(4) {
+	/*For unexplainable reasons, doing 90deg causes unusual glitches so yeah*/
+	transform: translate(-50%, -50%) rotate(89.5deg) translateY(3rem);
+}
+.spinner span:nth-child(5) {
+	transform: translate(-50%, -50%) rotate(112.5deg) translateY(3rem);
+}
+.spinner span:nth-child(6) {
+	transform: translate(-50%, -50%) rotate(135deg) translateY(3rem);
+}
+.spinner span:nth-child(7) {
+	transform: translate(-50%, -50%) rotate(157.5deg) translateY(3rem);
+}
+.spinner span:nth-child(8) {
+	transform: translate(-50%, -50%) rotate(180deg) translateY(3rem);
+}
+.spinner span:nth-child(9) {
+	transform: translate(-50%, -50%) rotate(202.5deg) translateY(3rem);
+}
+.spinner span:nth-child(10) {
+	transform: translate(-50%, -50%) rotate(225deg) translateY(3rem);
+}
+.spinner span:nth-child(11) {
+	transform: translate(-50%, -50%) rotate(247.5deg) translateY(3rem);
+}
+.spinner span:nth-child(12) {
+	transform: translate(-50%, -50%) rotate(270deg) translateY(3rem);
+}
+.spinner span:nth-child(13) {
+	transform: translate(-50%, -50%) rotate(292.5deg) translateY(3rem);
+}
+.spinner span:nth-child(14) {
+	transform: translate(-50%, -50%) rotate(315deg) translateY(3rem);
+}
+.spinner span:nth-child(15) {
+	transform: translate(-50%, -50%) rotate(337.5deg) translateY(3rem);
+}
+.spinner span:nth-child(16) {
+	transform: translate(-50%, -50%) rotate(360deg) translateY(3rem);
+}
+/*-------------------------------------------------*/
+
+/*Animations*/
+@keyframes anim-blink {
+	from {
+		opacity: 0;
+	}
+	49% {
+		opacity: 0;
+	}
+	51% {
+		opacity: 1;
+	}
+	to {
+		opacity: 1;
+	}
+}
+@keyframes anim-glow {
+	to {
+		filter: drop-shadow(0 0 18px #f4f4f6) brightness(0) invert(1);
+	}
+}
+@keyframes anim-rotate {
+	from {
+		transform: translate(-50%, -50%) rotate(0deg);
+	}
+	to {
+		transform: translate(-50%, -50%) rotate(360deg);
+	}
+}
+/*-------------------------------------------------*/

@@ -1,0 +1,53 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: "Spartan", Helvetica, sans-serif;
+}
+:root {
+	font-size: 62.5%;
+}
+body {
+	padding: 10%;
+	background-color: #f4f4f6;
+}
+h1 {
+	color: #161c27;
+	margin-bottom: 10vh;
+	font-size: 5rem;
+	font-weight: 600;
+}
+p {
+	font-family: "Work Sans", Helvetica, sans-serif;
+	color: #454e5e;
+	font-size: 1.5rem;
+	font-weight: 300;
+}
+::selection {
+	background-color: #007bf6;
+	color: #f4f4f4;
+}
+::-moz-selection {
+	background-color: #007bf6;
+	color: #f4f4f4;
+}
+
+/*Scrollbar CSS*/
+::-webkit-scrollbar {
+	width: 8px;
+	height: 8px;
+}
+::-webkit-scrollbar-track {
+	background: #e8e8ed;
+}
+::-webkit-scrollbar-thumb {
+	background: #7d8597;
+	border-radius: 8px;
+}
+::-webkit-scrollbar-thumb:hover {
+	background: #454e5e;
+}
+::-webkit-scrollbar-corner {
+	background: #e8e8ed;
+}
+/*-------------------------------------------------*/
